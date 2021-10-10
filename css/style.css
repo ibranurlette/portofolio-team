@@ -1,0 +1,184 @@
+/* CSS INI UNTUK MENGATUR TAMPILAN DI HTML */
+
+
+/* untuk header */
+header {
+  background-color: #343A40;
+}
+
+#judul-header {
+  color: white;
+  padding: 20px;
+}
+
+#introduction-section {
+  display: grid;
+  justify-content: center;
+}
+
+#text-introduction {
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+#title-team-section {
+  display: grid;
+  justify-content: center;
+}
+
+
+
+hr {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+}
+
+/* Media Query untuk tampilan responsive  */
+/* Untuk Leptop */
+@media only screen and (min-width: 992px) {
+  #first-section {
+    grid-column: 1;
+    grid-row: 1;
+    margin-right: 10px;
+    width: 200px;
+  }
+
+  #second-section {
+    grid-column: 2;
+    grid-row: 1;
+    margin-right: 10px;
+    width: 200px;
+  }
+
+  #third-section {
+    grid-column: 3;
+    grid-row: 1;
+    margin-right: 10px;
+    width: 200px;
+  }
+
+  #four-section {
+    grid-column: 4;
+    grid-row: 1;
+    width: 200px;
+  }
+}
+
+/* Untuk Tablet */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  #first-section {
+    grid-column: 1 / span 5;
+    grid-row: 1;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+  }
+
+  #second-section {
+    grid-column: 6 / span 6;
+    grid-row: 1;
+    margin-bottom: 10px;
+    width: 200px;
+  }
+
+  #third-section {
+    grid-column: 1 / span 5;
+    grid-row: 2;
+    margin-right: 10px;
+    width: 200px;
+  }
+
+  #four-section {
+    grid-column: 6 / span 6;
+    grid-row: 2;
+    width: 200px;
+  }
+
+}
+
+
+/* Untuk Hp */
+@media only screen and (max-width: 600px) {
+
+  #first-section,
+  #second-section,
+  #third-section {
+    margin-bottom: 10px;
+  }
+
+  #four-section {
+    margin-bottom: 70px;
+  }
+}
+
+/* First-Section  */
+#first-section {
+  background-color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  color: white
+}
+
+#img-team {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Second-Section  */
+#second-section {
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px
+}
+
+/* Third-Section  */
+#third-section {
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px
+}
+
+/* Four-Section  */
+#four-section {
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px
+}
+
+
+/* untuk article */
+#article-section {
+  margin-bottom: 70px;
+  background-color: #343A40;
+  margin-top: 16px;
+  padding: 20px;
+  color: white
+}
+
+/* Untuk Footer */
+footer {
+  background-color: #F8F9FA;
+  color: #0F80FB;
+  padding: 20px;
+  /* footer flex */
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  left: 0;
+}
