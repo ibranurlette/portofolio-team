@@ -7,19 +7,8 @@ body {
 /* untuk header */
 header {
   background-color: #343A40;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 60px;
 }
 
-#navigasi {
-  display: flex;
-  /* color: #8E9295; */
-  position: absolute;
-  right: 0;
-  margin-right: 30px;
-}
 
 #text-navigasi {
   color: #8E9295;
@@ -82,6 +71,19 @@ a {
 /* Media Query untuk tampilan responsive  */
 /* Untuk Leptop */
 @media only screen and (min-width: 992px) {
+  header {
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+
+  #navigasi {
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+  }
+
   #first-section {
     grid-column: 1;
     grid-row: 1;
@@ -112,6 +114,19 @@ a {
 
 /* Untuk Tablet */
 @media only screen and (min-width: 601px) and (max-width: 992px) {
+  header {
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+
+  #navigasi {
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+  }
+
   #first-section {
     grid-column: 1 / span 5;
     grid-row: 1;
@@ -146,7 +161,26 @@ a {
 /* Untuk Hp */
 @media only screen and (max-width: 600px) {
 
-  #first-section,
+  header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+  }
+
+  #judul-header {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #navigasi {
+    display: flex;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+
+
+  */ #first-section,
   #second-section,
   #third-section {
     margin-bottom: 10px;
