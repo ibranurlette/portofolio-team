@@ -1,9 +1,29 @@
 /* CSS INI UNTUK MENGATUR TAMPILAN DI HTML */
 
+body {
+  background-color: #F8F9FA;
+}
 
 /* untuk header */
 header {
   background-color: #343A40;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+}
+
+#navigasi {
+  display: flex;
+  /* color: #8E9295; */
+  position: absolute;
+  right: 0;
+  margin-right: 30px;
+}
+
+#text-navigasi {
+  color: #8E9295;
+  margin-right: 20px;
 }
 
 #judul-header {
@@ -22,7 +42,8 @@ header {
   color: white;
 }
 
-#title-team-section {
+#our-team-section,
+#our-stack-section {
   display: grid;
   justify-content: center;
 }
@@ -34,10 +55,28 @@ hr {
   margin-bottom: 30px;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#title-name {
+  text-align: center;
+}
+
+#detail {
+  box-shadow: 2px 2px 4px #DBDBDC;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #5ACBF0;
+  color: #F8F9FA;
+}
 
 .grid-container {
   display: grid;
   justify-content: center;
+  margin-bottom: 70px;
 }
 
 /* Media Query untuk tampilan responsive  */
@@ -112,20 +151,19 @@ hr {
   #third-section {
     margin-bottom: 10px;
   }
-
-  #four-section {
-    margin-bottom: 70px;
-  }
 }
 
-/* First-Section  */
-#first-section {
-  background-color: black;
+#first-section,
+#second-section,
+#third-section,
+#four-section {
+  background-color: white;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
-  color: white;
+  color: black;
   border-radius: 20px;
+  box-shadow: 2px 2px 4px #DBDBDC;
 }
 
 #img-team {
@@ -133,57 +171,19 @@ hr {
   height: auto;
   object-fit: cover;
   border-radius: 50%;
+  box-shadow: 2px 2px 4px #DBDBDC;
 }
 
-/* Second-Section  */
-#second-section {
-  background-color: black;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  border-radius: 20px;
-}
-
-/* Third-Section  */
-#third-section {
-  background-color: black;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  border-radius: 20px;
-}
-
-/* Four-Section  */
-#four-section {
-  background-color: black;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  border-radius: 20px;
-}
-
-
-/* untuk article */
-#article-section {
-  margin-bottom: 70px;
-  background-color: #343A40;
-  margin-top: 16px;
-  padding: 20px;
-  color: white
-}
 
 /* Untuk Footer */
 footer {
-  background-color: #F8F9FA;
+  background-color: white;
   color: #0F80FB;
   padding: 20px;
-  /* footer flex */
   position: fixed;
   width: 100%;
   bottom: 0;
   text-align: center;
   left: 0;
+  box-shadow: 2px 2px 4px #DBDBDC;
 }
